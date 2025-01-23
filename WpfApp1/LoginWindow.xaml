@@ -1,0 +1,23 @@
+﻿<Window x:Class="ConferenceManagementSystem.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация" Height="200" Width="300">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- Поле для ввода логина -->
+            <Grid>
+                <TextBox x:Name="UsernameBox" Margin="5" Padding="5" TextChanged="UsernameBox_TextChanged"/>
+                <TextBlock x:Name="UsernamePlaceholder" Text="Логин" Margin="10,5,5,5" Foreground="Gray" IsHitTestVisible="False"/>
+            </Grid>
+
+            <!-- Поле для ввода пароля -->
+            <Grid>
+                <PasswordBox x:Name="PasswordBox" Margin="5" Padding="5" PasswordChanged="PasswordBox_PasswordChanged"/>
+                <TextBlock x:Name="PasswordPlaceholder" Text="Пароль" Margin="10,5,5,5" Foreground="Gray" IsHitTestVisible="False"/>
+            </Grid>
+
+            <!-- Кнопка входа -->
+            <Button Content="Войти" Click="LoginButton_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

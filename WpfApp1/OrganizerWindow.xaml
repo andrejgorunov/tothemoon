@@ -1,0 +1,14 @@
+﻿<Window x:Class="ConferenceManagementSystem.OrganizerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Организатор" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Button Content="Добавить сотрудника" Click="AddEmployee_Click" Margin="5"/>
+            <Button Content="Обновить статус сотрудника" Click="UpdateEmployeeStatus_Click" Margin="5"/>
+            <Button Content="Удалить сотрудника" Click="DeleteEmployee_Click" Margin="5"/>
+            <Button Content="Выйти" Click="Logout_Click" Margin="5"/>
+            <DataGrid x:Name="EmployeesDataGrid" AutoGenerateColumns="True" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

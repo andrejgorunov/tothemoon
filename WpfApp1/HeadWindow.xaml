@@ -1,0 +1,15 @@
+﻿<Window x:Class="ConferenceManagementSystem.HeadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Зав. секции" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Button Content="Создать докладчика" Click="CreateSpeaker_Click" Margin="5"/>
+            <Button Content="Создать доклад" Click="CreateReport_Click" Margin="5"/>
+            <Button Content="Изменить статус доклада" Click="ChangeReportStatus_Click" Margin="5"/>
+            <Button Content="Выйти" Click="Logout_Click" Margin="5"/>
+            <DataGrid x:Name="SpeakersDataGrid" AutoGenerateColumns="True" Margin="5"/>
+            <DataGrid x:Name="ReportsDataGrid" AutoGenerateColumns="True" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

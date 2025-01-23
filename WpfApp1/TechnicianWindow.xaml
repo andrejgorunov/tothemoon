@@ -1,0 +1,13 @@
+﻿<Window x:Class="ConferenceManagementSystem.TechnicianWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Техник" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Button Content="Просмотреть доклады" Click="ViewReports_Click" Margin="5"/>
+            <Button Content="Изменить статус доклада" Click="ChangeReportStatus_Click" Margin="5"/>
+            <Button Content="Выйти" Click="Logout_Click" Margin="5"/>
+            <DataGrid x:Name="ReportsDataGrid" AutoGenerateColumns="True" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
